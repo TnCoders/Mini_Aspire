@@ -22,7 +22,7 @@ class CreateRepaymentsTable extends Migration
             $table->decimal('amount', 10, 3);
             $table->text('remakrs')->nullable();
 
-            
+
             $table->timestamps();
         });
     }

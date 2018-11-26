@@ -27,7 +27,7 @@ class CreateLoansTable extends Migration
 //            $table->decimal('balance', 10, 3);
 
             $table->text('term');
-            $table->enum('frequency', ['Day', 'Week','Month', 'Year'])->default('Day');
+            $table->enum('frequency', ['Month', 'Year'])->default('Month');
 
             $table->date('start_date');
             $table->date('released_date');
